@@ -56,6 +56,11 @@
 		096EA48B20622177008D12AE /* ProgrammerChat */ = {
 			isa = PBXGroup;
 			children = (
+				096EA4A420636265008D12AE /* Services */,
+				096EA4A120636224008D12AE /* Extenisons */,
+				096EA4A22063624D008D12AE /* View */,
+				096EA4A320636253008D12AE /* Model */,
+				096EA4A0206361D1008D12AE /* Controller */,
 				096EA48C20622177008D12AE /* AppDelegate.swift */,
 				096EA48E20622177008D12AE /* FirstViewController.swift */,
 				096EA49020622177008D12AE /* SecondViewController.swift */,
@@ -65,6 +70,41 @@
 				096EA49A20622177008D12AE /* Info.plist */,
 			);
 			path = ProgrammerChat;
+			sourceTree = "<group>";
+		};
+		096EA4A0206361D1008D12AE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		096EA4A120636224008D12AE /* Extenisons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenisons;
+			sourceTree = "<group>";
+		};
+		096EA4A22063624D008D12AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		096EA4A320636253008D12AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		096EA4A420636265008D12AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

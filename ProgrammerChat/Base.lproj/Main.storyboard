@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--AuthVC-->
         <scene sceneID="Zuj-9M-sog">
             <objects>
-                <viewController id="V9j-MA-n4M" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="V9j-MA-n4M" customClass="AuthVC" customModule="ProgrammerChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G3U-eY-7aD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
                                 <color key="textColor" red="0.5607843137254902" green="0.81176470588235294" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdp-e2-crj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdp-e2-crj" customClass="ShadowView" customModule="ProgrammerChat" customModuleProvider="target">
                                 <rect key="frame" x="16" y="163" width="343" height="341"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mb2-yO-YaL">
@@ -188,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="-2023" y="461"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="4gi-qV-ntw">
             <objects>
-                <viewController id="zwQ-Ji-FKq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="zwQ-Ji-FKq" customClass="LoginVC" customModule="ProgrammerChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P53-4V-1ER">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
                                         <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8Z-JV-2Dh">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8Z-JV-2Dh" customClass="insetTextField" customModule="ProgrammerChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="41" width="335" height="50"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -223,7 +223,7 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tub-AC-vdO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tub-AC-vdO" customClass="insetTextField" customModule="ProgrammerChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="111" width="335" height="50"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>

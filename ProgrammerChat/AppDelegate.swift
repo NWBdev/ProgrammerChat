@@ -19,6 +19,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
 
+        
+        //if no one is logged in this will pop the AuthVC to have user Login
+        if Auth.auth().currentUser == nil {
+            //try! Auth.auth().signOut()
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
+            window?.makeKeyAndVisible()
+            window?.rootViewController?.present(authVC, animated: true, completion: nil)//VC present on top
+        }
+        
+        
         return true
     }
 

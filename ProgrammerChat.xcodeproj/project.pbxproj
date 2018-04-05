@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09042A0D2075D5C900DDCFE2 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09042A0C2075D5C900DDCFE2 /* MeVC.swift */; };
+		09042A0F2075DDE900DDCFE2 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09042A0E2075DDE900DDCFE2 /* CreatePostVC.swift */; };
 		09067511206CA6A80033FE27 /* insetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067510206CA6A80033FE27 /* insetTextField.swift */; };
 		09067513206CAB3E0033FE27 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067512206CAB3E0033FE27 /* ShadowView.swift */; };
 		09067515206CB3E90033FE27 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067514206CB3E90033FE27 /* AuthService.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		0195E75A3C46839A95F5C6B1 /* Pods-ProgrammerChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammerChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammerChat/Pods-ProgrammerChat.release.xcconfig"; sourceTree = "<group>"; };
 		09042A0C2075D5C900DDCFE2 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		09042A0E2075DDE900DDCFE2 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		09067510206CA6A80033FE27 /* insetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insetTextField.swift; sourceTree = "<group>"; };
 		09067512206CAB3E0033FE27 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		09067514206CB3E90033FE27 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -85,8 +87,6 @@
 				096EA4A320636253008D12AE /* Model */,
 				096EA4A0206361D1008D12AE /* Controller */,
 				096EA48C20622177008D12AE /* AppDelegate.swift */,
-				096EA48E20622177008D12AE /* FeedVC.swift */,
-				096EA49020622177008D12AE /* GroupsVC.swift */,
 				096EA49220622177008D12AE /* Main.storyboard */,
 				096EA49520622177008D12AE /* Assets.xcassets */,
 				096EA49720622177008D12AE /* LaunchScreen.storyboard */,
@@ -99,9 +99,12 @@
 		096EA4A0206361D1008D12AE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				096EA49020622177008D12AE /* GroupsVC.swift */,
+				096EA48E20622177008D12AE /* FeedVC.swift */,
 				09A6DD9B206A1D0F0079D22D /* AuthVC.swift */,
 				09A6DD9D206A1D690079D22D /* LoginVC.swift */,
 				09042A0C2075D5C900DDCFE2 /* MeVC.swift */,
+				09042A0E2075DDE900DDCFE2 /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				09067515206CB3E90033FE27 /* AuthService.swift in Sources */,
 				09A6DD9E206A1D690079D22D /* LoginVC.swift in Sources */,
 				09067513206CAB3E0033FE27 /* ShadowView.swift in Sources */,
+				09042A0F2075DDE900DDCFE2 /* CreatePostVC.swift in Sources */,
 				096EA48D20622177008D12AE /* AppDelegate.swift in Sources */,
 				096EA48F20622177008D12AE /* FeedVC.swift in Sources */,
 				09A6DD9A206894E20079D22D /* DataService.swift in Sources */,

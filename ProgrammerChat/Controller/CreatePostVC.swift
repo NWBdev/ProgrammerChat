@@ -23,6 +23,7 @@ class CreatePostVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         textView.delegate = self
+        sendBtn.BindToKeyboard()
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,6 +11,7 @@
 		09042A0F2075DDE900DDCFE2 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09042A0E2075DDE900DDCFE2 /* CreatePostVC.swift */; };
 		09042A1120782F9B00DDCFE2 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09042A1020782F9B00DDCFE2 /* UIViewExt.swift */; };
 		09042A132078737400DDCFE2 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09042A122078737400DDCFE2 /* FeedCell.swift */; };
+		09042A15207AFDCB00DDCFE2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09042A14207AFDCB00DDCFE2 /* Message.swift */; };
 		09067511206CA6A80033FE27 /* insetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067510206CA6A80033FE27 /* insetTextField.swift */; };
 		09067513206CAB3E0033FE27 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067512206CAB3E0033FE27 /* ShadowView.swift */; };
 		09067515206CB3E90033FE27 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067514206CB3E90033FE27 /* AuthService.swift */; };
@@ -33,6 +34,7 @@
 		09042A0E2075DDE900DDCFE2 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		09042A1020782F9B00DDCFE2 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		09042A122078737400DDCFE2 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		09042A14207AFDCB00DDCFE2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		09067510206CA6A80033FE27 /* insetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insetTextField.swift; sourceTree = "<group>"; };
 		09067512206CAB3E0033FE27 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		09067514206CB3E90033FE27 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		096EA4A320636253008D12AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				09042A14207AFDCB00DDCFE2 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				096EA48D20622177008D12AE /* AppDelegate.swift in Sources */,
 				096EA48F20622177008D12AE /* FeedVC.swift in Sources */,
 				09A6DD9A206894E20079D22D /* DataService.swift in Sources */,
+				09042A15207AFDCB00DDCFE2 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

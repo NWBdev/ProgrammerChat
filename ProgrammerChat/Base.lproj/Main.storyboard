@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -444,17 +443,56 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-s2-d4F">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-s2-d4F">
                                         <rect key="frame" x="0.0" y="206.5" width="335" height="350.5"/>
                                         <color key="backgroundColor" red="0.1647058824" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gbp-s8-sbC">
-                                                <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="gbp-s8-sbC" customClass="UserCell" customModule="ProgrammerChat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="335" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gbp-s8-sbC" id="Dfa-Uz-yWU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-Rp-LHA">
+                                                            <rect key="frame" x="10" y="8" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="8H0-mR-MyZ"/>
+                                                                <constraint firstAttribute="height" constant="44" id="d3Y-tY-tHa"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@programmerchat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KRy-sy-y4m">
+                                                            <rect key="frame" x="64" y="19" width="238" height="22"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.32002852389999997" green="0.81511443849999998" blue="0.48385293670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="BrQ-6p-2iY">
+                                                            <rect key="frame" x="312" y="15" width="18" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="18" id="Dn9-es-f2o"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="gk8-Rp-LHA" firstAttribute="top" secondItem="Dfa-Uz-yWU" secondAttribute="top" constant="8" id="1Cf-uv-MRG"/>
+                                                        <constraint firstItem="KRy-sy-y4m" firstAttribute="leading" secondItem="gk8-Rp-LHA" secondAttribute="trailing" constant="10" id="Aw4-z1-ucB"/>
+                                                        <constraint firstItem="gk8-Rp-LHA" firstAttribute="leading" secondItem="Dfa-Uz-yWU" secondAttribute="leading" constant="10" id="CNi-JT-Pg9"/>
+                                                        <constraint firstItem="BrQ-6p-2iY" firstAttribute="top" secondItem="Dfa-Uz-yWU" secondAttribute="topMargin" constant="4" id="D2m-XC-uiS"/>
+                                                        <constraint firstItem="BrQ-6p-2iY" firstAttribute="leading" secondItem="KRy-sy-y4m" secondAttribute="trailing" constant="10" id="Hg3-Zl-2UK"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="BrQ-6p-2iY" secondAttribute="bottom" constant="4" id="Skg-nD-sF0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="gk8-Rp-LHA" secondAttribute="bottom" constant="8" id="Vph-J9-8io"/>
+                                                        <constraint firstItem="BrQ-6p-2iY" firstAttribute="trailing" secondItem="Dfa-Uz-yWU" secondAttribute="trailingMargin" constant="10" id="i4g-WE-vOk"/>
+                                                        <constraint firstItem="KRy-sy-y4m" firstAttribute="top" secondItem="Dfa-Uz-yWU" secondAttribute="topMargin" constant="8" id="lrO-mW-kKT"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="KRy-sy-y4m" secondAttribute="bottom" constant="8" id="znB-Mz-XL8"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="checkImg" destination="BrQ-6p-2iY" id="WTU-90-rzk"/>
+                                                    <outlet property="emailLbl" destination="KRy-sy-y4m" id="YWK-UY-lDf"/>
+                                                    <outlet property="profileImg" destination="gk8-Rp-LHA" id="VWw-q9-KgM"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -836,6 +874,7 @@
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
+        <image name="whiteCheckmark" width="18" height="14"/>
     </resources>
     <color key="tintColor" red="0.015686274509803921" green="0.6705882352941176" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
 </document>

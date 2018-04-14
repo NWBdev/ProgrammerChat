@@ -21,8 +21,10 @@ class CreateGroupsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +37,21 @@ class CreateGroupsVC: UIViewController {
     }
     @IBAction func doneBtnWasPressed(_ sender: Any) {
     }
+}
+
+extension  CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
-
-   
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "userCell") as? UserCell else { return UITableViewCell() }
+        let profileImage = UIImage(named: "defaultProfileImage")
+        cell.configureCell(profileImg: profileImage!, email: "test@programmerchat.com", isSelected: true)
+        return cell
+    }
 }

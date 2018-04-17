@@ -118,6 +118,25 @@ class DataService {
         handler(true)
     }
     
+    
+    func getAllGroups(handler: @escaping (_ groupsArray: [Group]) -> ()) {
+        var groupsArray = [Group]()
+        REF_GROUPS.observeSingleEvent(of: .value) { (groupSnapShot) in
+            guard let groupSnapShot = groupSnapShot.children.allObjects as? [DataSnapshot] else { return }
+            for group in groupSnapShot {
+                let memberArray = group.childSnapshot(forPath: "members").value as! [String] //at the members array
+                if memberArray.contains((Auth.auth().currentUser?.uid)!) {
+                    let title = group.childSnapshot(forPath: "title").value as! String
+                    let description = group.childSnapshot(forPath: "description").value as! String
+                    let group = Group(title: title, description: description, key: group.key, members: memberArray, memberCount: memberArray.count)
+                    groupsArray.append(group)
+                }
+            }
+            handler(groupsArray)
+        }
+    }
+    
+    
 }
 
 

@@ -17,6 +17,7 @@
 		09067515206CB3E90033FE27 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09067514206CB3E90033FE27 /* AuthService.swift */; };
 		09332985207F15BB00D0D11E /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09332984207F15BB00D0D11E /* CreateGroupsVC.swift */; };
 		0945AF972065E0730068A0AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0945AF962065E0730068A0AF /* GoogleService-Info.plist */; };
+		094A93CA2085BD570038A0A9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094A93C92085BD570038A0A9 /* Group.swift */; };
 		096EA48D20622177008D12AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA48C20622177008D12AE /* AppDelegate.swift */; };
 		096EA48F20622177008D12AE /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA48E20622177008D12AE /* FeedVC.swift */; };
 		096EA49120622177008D12AE /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA49020622177008D12AE /* GroupsVC.swift */; };
@@ -43,6 +44,7 @@
 		09067514206CB3E90033FE27 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		09332984207F15BB00D0D11E /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		0945AF962065E0730068A0AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		094A93C92085BD570038A0A9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		096EA48920622177008D12AE /* ProgrammerChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammerChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096EA48C20622177008D12AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		096EA48E20622177008D12AE /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				09042A14207AFDCB00DDCFE2 /* Message.swift */,
+				094A93C92085BD570038A0A9 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				096EA49120622177008D12AE /* GroupsVC.swift in Sources */,
 				09067515206CB3E90033FE27 /* AuthService.swift in Sources */,
 				09332985207F15BB00D0D11E /* CreateGroupsVC.swift in Sources */,
+				094A93CA2085BD570038A0A9 /* Group.swift in Sources */,
 				099EE4BC2081B7E10053704E /* UserCell.swift in Sources */,
 				09A6DD9E206A1D690079D22D /* LoginVC.swift in Sources */,
 				09067513206CAB3E0033FE27 /* ShadowView.swift in Sources */,

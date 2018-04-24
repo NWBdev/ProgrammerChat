@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Bold</string>
-        </array>
-        <array key="Menlo.ttc">
-            <string>Menlo-Bold</string>
-            <string>Menlo-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Feed-->
         <scene sceneID="hNz-n2-bh7">
@@ -392,9 +383,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GroupTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf9-88-Vy3">
-                                        <rect key="frame" x="88" y="34.5" width="200" height="21"/>
+                                        <rect key="frame" x="134" y="34.5" width="108.5" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="InM-VT-BXl"/>
                                             <constraint firstAttribute="height" constant="21" id="Xss-qL-XQL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
@@ -419,7 +409,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJv-Vg-9x1">
-                                <rect key="frame" x="0.0" y="103" width="375" height="564"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="504"/>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="fPl-Y1-Ees" customClass="GroupFeedCell" customModule="ProgrammerChat" customModuleProvider="target">
@@ -429,18 +419,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="z6D-db-Ekt">
-                                                    <rect key="frame" x="25" y="21" width="50" height="50"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="z6D-db-Ekt">
+                                                    <rect key="frame" x="23" y="21" width="50" height="50"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="CXs-Cx-ty8"/>
-                                                        <constraint firstAttribute="width" constant="50" id="hzg-OR-xJv"/>
+                                                        <constraint firstAttribute="height" constant="50" id="6Ay-eN-Dl9"/>
+                                                        <constraint firstAttribute="width" constant="50" id="m55-vh-Y1p"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Axl-Q7-AOa">
-                                                    <rect key="frame" x="85" y="21" width="265" height="58"/>
+                                                    <rect key="frame" x="95" y="25" width="257" height="42"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@programmerchat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3A-VN-9ip">
-                                                            <rect key="frame" x="0.0" y="0.0" width="265" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="257" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="jG3-pA-0NJ"/>
                                                             </constraints>
@@ -449,7 +439,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dda-u0-F7M">
-                                                            <rect key="frame" x="0.0" y="28" width="265" height="30"/>
+                                                            <rect key="frame" x="0.0" y="28" width="257" height="14"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                                             <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -458,12 +448,11 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Axl-Q7-AOa" firstAttribute="top" secondItem="6Lu-Hj-Kgg" secondAttribute="topMargin" constant="10" id="SUM-s2-RDY"/>
-                                                <constraint firstItem="z6D-db-Ekt" firstAttribute="top" secondItem="6Lu-Hj-Kgg" secondAttribute="topMargin" constant="10" id="be1-d4-K2a"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Axl-Q7-AOa" secondAttribute="bottom" constant="10" id="eDC-eK-P4P"/>
-                                                <constraint firstItem="z6D-db-Ekt" firstAttribute="leading" secondItem="6Lu-Hj-Kgg" secondAttribute="leadingMargin" constant="10" id="mFc-0b-LDY"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Axl-Q7-AOa" secondAttribute="trailing" constant="10" id="nmh-NF-HxA"/>
-                                                <constraint firstItem="Axl-Q7-AOa" firstAttribute="leading" secondItem="z6D-db-Ekt" secondAttribute="trailing" constant="10" id="zJu-kp-lTR"/>
+                                                <constraint firstItem="z6D-db-Ekt" firstAttribute="leading" secondItem="6Lu-Hj-Kgg" secondAttribute="leadingMargin" constant="8" id="3HR-4e-lWX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Axl-Q7-AOa" secondAttribute="trailing" constant="8" id="7tz-Os-3do"/>
+                                                <constraint firstItem="z6D-db-Ekt" firstAttribute="top" secondItem="6Lu-Hj-Kgg" secondAttribute="topMargin" constant="10" id="9wt-98-0nh"/>
+                                                <constraint firstItem="Axl-Q7-AOa" firstAttribute="leading" secondItem="z6D-db-Ekt" secondAttribute="trailing" constant="22" id="ZjM-U8-bhx"/>
+                                                <constraint firstItem="Axl-Q7-AOa" firstAttribute="centerY" secondItem="z6D-db-Ekt" secondAttribute="centerY" id="tvT-xk-CDF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.1647058824" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -524,10 +513,10 @@
                             <constraint firstItem="bgm-WD-9i2" firstAttribute="top" secondItem="nOj-Zy-WJq" secondAttribute="bottom" id="H4F-43-cpA"/>
                             <constraint firstItem="jZ9-Yi-5FQ" firstAttribute="leading" secondItem="2qs-W1-iMU" secondAttribute="leading" id="Qbu-FK-1KX"/>
                             <constraint firstAttribute="trailing" secondItem="fJv-Vg-9x1" secondAttribute="trailing" id="RgT-kc-vyE"/>
+                            <constraint firstItem="nOj-Zy-WJq" firstAttribute="top" secondItem="fJv-Vg-9x1" secondAttribute="bottom" id="Uf0-HP-1T1"/>
                             <constraint firstItem="Nb3-Kb-Z1U" firstAttribute="trailing" secondItem="2qs-W1-iMU" secondAttribute="trailingMargin" id="eV0-ZB-7Xv"/>
                             <constraint firstItem="jZ9-Yi-5FQ" firstAttribute="top" secondItem="2qs-W1-iMU" secondAttribute="top" id="k9C-Qi-nNH"/>
                             <constraint firstItem="Nb3-Kb-Z1U" firstAttribute="leading" secondItem="2qs-W1-iMU" secondAttribute="leadingMargin" id="lk1-03-pYy"/>
-                            <constraint firstItem="bgm-WD-9i2" firstAttribute="top" secondItem="fJv-Vg-9x1" secondAttribute="bottom" id="mao-Ww-41c"/>
                             <constraint firstItem="fJv-Vg-9x1" firstAttribute="top" secondItem="Nb3-Kb-Z1U" secondAttribute="bottom" constant="8" id="n9J-KF-gsk"/>
                             <constraint firstAttribute="trailing" secondItem="nOj-Zy-WJq" secondAttribute="trailing" id="oWy-Mp-6YX"/>
                             <constraint firstAttribute="trailing" secondItem="jZ9-Yi-5FQ" secondAttribute="trailing" id="vCm-RW-M63"/>
@@ -535,6 +524,7 @@
                     </view>
                     <connections>
                         <outlet property="groupTitleLbl" destination="Gf9-88-Vy3" id="7hv-6P-HMa"/>
+                        <outlet property="mainView" destination="2qs-W1-iMU" id="5R3-JG-1nx"/>
                         <outlet property="membersLbl" destination="Nb3-Kb-Z1U" id="uri-UL-XmQ"/>
                         <outlet property="messageTxtField" destination="GtR-XG-FJl" id="Mk3-mk-76D"/>
                         <outlet property="sendBtn" destination="3QS-5g-sx6" id="5sm-nF-xJJ"/>

@@ -31,6 +31,7 @@
 		09A6DD9E206A1D690079D22D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A6DD9D206A1D690079D22D /* LoginVC.swift */; };
 		09BE5DD3208840A6001DE132 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE5DD2208840A6001DE132 /* GroupFeedCell.swift */; };
 		09BE5DD52088414F001DE132 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE5DD42088414F001DE132 /* GroupFeedVC.swift */; };
+		09BE5DD720886C13001DE132 /* notes in Resources */ = {isa = PBXBuildFile; fileRef = 09BE5DD620886C13001DE132 /* notes */; };
 		E8DBC3173E091662493421BD /* Pods_ProgrammerChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5251F61E8FC4A323B78D161A /* Pods_ProgrammerChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		09A6DD9D206A1D690079D22D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		09BE5DD2208840A6001DE132 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
 		09BE5DD42088414F001DE132 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
+		09BE5DD620886C13001DE132 /* notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = notes; sourceTree = "<group>"; };
 		3BAB9B82AAAD449973961843 /* Pods-ProgrammerChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammerChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammerChat/Pods-ProgrammerChat.debug.xcconfig"; sourceTree = "<group>"; };
 		5251F61E8FC4A323B78D161A /* Pods_ProgrammerChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgrammerChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 				096EA49720622177008D12AE /* LaunchScreen.storyboard */,
 				096EA49A20622177008D12AE /* Info.plist */,
 				0945AF962065E0730068A0AF /* GoogleService-Info.plist */,
+				09BE5DD620886C13001DE132 /* notes */,
 			);
 			path = ProgrammerChat;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			files = (
 				096EA49920622177008D12AE /* LaunchScreen.storyboard in Resources */,
 				0945AF972065E0730068A0AF /* GoogleService-Info.plist in Resources */,
+				09BE5DD720886C13001DE132 /* notes in Resources */,
 				096EA49620622177008D12AE /* Assets.xcassets in Resources */,
 				096EA49420622177008D12AE /* Main.storyboard in Resources */,
 			);
